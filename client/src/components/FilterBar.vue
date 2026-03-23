@@ -104,16 +104,17 @@ export default {
 .filters-bar {
   background: #f8fafc;
   border-bottom: 1px solid #e2e8f0;
-  padding: 0.75rem 0;
+  padding: 10px 0;
   position: sticky;
-  top: 70px;
+  /* top: 0 — no top nav bar exists in the new sidebar layout */
+  top: 0;
   z-index: 90;
 }
 
 .filters-container {
-  max-width: 1600px;
-  margin: 0 auto;
-  padding: 0 2rem;
+  /* horizontal padding matches .main-content padding (32px) */
+  padding: 0 32px;
+  max-width: 1400px;
   display: flex;
   align-items: center;
   gap: 1rem;
